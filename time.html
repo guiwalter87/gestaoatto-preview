@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Time — Os profissionais por trás da Atto</title>
-<meta name="description" content="Quem está na mesa. Quatro profissionais, três áreas — Estratégia, Gestão &amp; Finanças, Gente &amp; Gestão e R&amp;S." />
+<title>Time: Os profissionais por trás da Atto</title>
+<meta name="description" content="Quem está na mesa. Quatro profissionais, três áreas, Estratégia, Gestão &amp; Finanças, Gente &amp; Gestão e R&amp;S." />
 <link rel="stylesheet" href="assets/site.css" />
 <style>
 .time-intro{padding:40px 0 80px}
@@ -17,12 +17,12 @@
 .time-area .area-desc{font-size:17px;line-height:1.65;color:var(--cinza-escuro);max-width:58ch;margin-bottom:48px}
 
 .perfil{display:grid;grid-template-columns:1fr 1.6fr;gap:64px;align-items:start;padding-top:24px;border-top:1px solid var(--linha)}
-.perfil-img{aspect-ratio:4/5;background:linear-gradient(135deg,var(--azul-atto) 0%,var(--teal-atto) 100%);border-radius:2px;position:relative;overflow:hidden}
-.perfil-img::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 30% 30%,rgba(255,255,255,0.15) 0%,transparent 55%);pointer-events:none;z-index:1}
-.perfil-img .initials{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Outfit',sans-serif;font-weight:200;font-size:clamp(80px,10vw,140px);color:rgba(255,255,255,0.96);letter-spacing:-.04em;z-index:1}
-.perfil-img img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;filter:grayscale(8%) contrast(1.02);position:relative;z-index:2}
-.perfil-img img[src$=".jpg"]:not([src*="data:"]),.perfil-img img[src$=".jpeg"]:not([src*="data:"]),.perfil-img img[src$=".png"]:not([src*="data:"]){background:transparent}
-.perfil-img .tag{position:absolute;top:20px;left:20px;background:rgba(255,255,255,.94);color:var(--azul-noite);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:100px;z-index:3}
+.perfil-img{aspect-ratio:4/5;background:var(--papel-alt);border-radius:2px;position:relative;overflow:hidden}
+.perfil-img.bg-a{background:linear-gradient(135deg,var(--azul-noite),var(--azul-atto))}
+.perfil-img.bg-b{background:linear-gradient(135deg,var(--azul-atto),var(--teal-atto))}
+.perfil-img.bg-c{background:linear-gradient(135deg,var(--teal-atto),var(--azul-atto) 80%)}
+.perfil-img.bg-d{background:linear-gradient(160deg,var(--azul-atto),var(--roxo))}
+.perfil-img .tag{position:absolute;top:20px;left:20px;background:rgba(255,255,255,.94);color:var(--azul-noite);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:100px}
 .perfil-info .cargo{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--teal-atto);margin-bottom:14px}
 .perfil-info h3{font-family:'Outfit';font-weight:300;font-size:clamp(30px,3.5vw,42px);line-height:1.05;letter-spacing:-.02em;color:var(--tinta);margin-bottom:10px}
 .perfil-info h3 em{font-style:italic;color:var(--azul-atto)}
@@ -46,12 +46,12 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Atto Estratégias">
-<meta property="og:title" content="Time — Os profissionais por trás da Atto">
+<meta property="og:title" content="Time: Os profissionais por trás da Atto">
 <meta property="og:description" content="Conheça os sócios, consultores e parceiros que conduzem os projetos da Atto Estratégias.">
 <meta property="og:url" content="https://www.gestaoatto.com.br/time.html">
 <meta property="og:image" content="https://www.gestaoatto.com.br/assets/atto_logo_dark.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Time — Os profissionais por trás da Atto">
+<meta name="twitter:title" content="Time: Os profissionais por trás da Atto">
 <meta name="twitter:description" content="Conheça os sócios, consultores e parceiros que conduzem os projetos da Atto Estratégias.">
 <meta name="twitter:image" content="https://www.gestaoatto.com.br/assets/atto_logo_dark.png">
 <script type="application/ld+json">
@@ -85,8 +85,6 @@
 </head>
 <body>
 
-<div class="scroll-progress" aria-hidden="true"></div>
-
 <header id="siteHeader">
   <div class="container header-inner">
     <a href="index.html" class="logo-mark"><img class="logo-light" src="assets/atto_logo_light_sm.png" alt="Atto" /><img class="logo-dark" src="assets/atto_logo_dark_sm.png" alt="Atto" /></a>
@@ -107,26 +105,26 @@
 <section class="page-hero">
   <div class="container">
     <div class="kicker">A Atto · Nossa equipe</div>
-    <h1>Três sócios e um time, <em>três áreas</em> — uma casa.</h1>
-    <p class="lead">A Atto é uma boutique, não um balcão. Três sócios — Guilherme, Juliano e Patrícia — conduzem as três áreas da casa: Estratégias Empresariais, Gestão &amp; Finanças e Gente &amp; Gestão, esta última com frente dedicada de Recrutamento &amp; Seleção. Quem conversa com o cliente é quem assina o trabalho — sem camada intermediária entre quem pensa e quem executa.</p>
+    <h1>Quatro profissionais, <em>três áreas</em>, uma casa.</h1>
+    <p class="lead">A Atto é uma boutique, não um balcão. Cada relação é conduzida por um time enxuto e coeso, organizado em torno de três áreas: Estratégia, Gestão &amp; Finanças e Gente &amp; Gestão (com frente dedicada de Recrutamento &amp; Seleção). Quem conversa com o cliente é quem assina o trabalho, sem camada intermediária entre quem pensa e quem executa.</p>
   </div>
 </section>
 
+<!-- ESTRATÉGIA -->
 <section class="time-area">
   <div class="container">
     <div class="time-area-label">Área 01 · Estratégias Empresariais</div>
-    <h2>Direção do negócio — <em>onde ir</em> e como chegar.</h2>
+    <h2>Direção do negócio, <em>onde ir</em> e como chegar.</h2>
     <p class="area-desc">Leitura do modelo de negócio, tese de crescimento, planejamento estratégico, governança e execução. A área que conduz os Diagnósticos de 90 dias e a rotina de direção dos clientes em rotina mensal.</p>
 
     <div class="perfil">
-      <div class="perfil-img"><span class="initials" aria-hidden="true">GW</span><img src="assets/time/Guilherme_walter.jpg" alt="Guilherme Walter" loading="eager"><span class="tag">Sócio-fundador</span></div>
+      <div class="perfil-img bg-a"><span class="tag">Sócio-diretor</span></div>
       <div class="perfil-info">
-        <div class="cargo">Sócio-fundador · Estratégias Empresariais</div>
+        <div class="cargo">Sócio · Estratégias Empresariais</div>
         <h3>Guilherme <em>Walter</em></h3>
-        <div class="subtitle">Direção Estratégica · Governança &amp; M&amp;A · Conselho Consultivo</div>
-        <p>Sócio-fundador da Atto. Fundou a casa em 2019, depois de quase 20 anos em posições de liderança na indústria e no varejo — passou por áreas comerciais, inteligência de mercado, logística e administrativo, e chegou a ocupar a direção executiva de uma indústria do setor automotivo, onde aprendeu de dentro a pressão de escalar com disciplina.</p>
-        <p>Conduz pessoalmente os Diagnósticos de 90 dias e lidera as frentes de Direção Estratégica e Governança &amp; M&amp;A da Atto. Referência da casa para temas de profissionalização de empresa familiar, desenho de conselho consultivo, estruturação societária e preparação para eventos de transação.</p>
-        <p>Formado em Administração pela ULBRA, com dois MBAs — em Gestão Empresarial (Laureate International Universities) e em Inteligência Artificial para Negócios (Faculdade Exame). Escreve em Perspectivas sobre governança, estratégia e o próximo ciclo da empresa em crescimento.</p>
+        <div class="subtitle">Direção Estratégica · Governança &amp; M&amp;A · Indústria e Distribuição</div>
+        <p>Sócio-fundador da Atto. Conduz pessoalmente os Diagnósticos de 90 dias em clientes de médio porte e lidera a frente de governança, sucessão e processos de M&amp;A assessorados pela casa. Leva para a mesa experiência direta em indústria e comércio, formatos de negócio familiares em crescimento, com mix extenso, ciclo financeiro longo e dependência operacional do sócio.</p>
+        <p>Escreve sobre governança, estratégia e preparação da empresa média brasileira para o próximo ciclo. Referência interna para temas de profissionalização de empresa familiar, desenho de conselho consultivo e estruturação societária.</p>
         <div class="perfil-meta">
           <div>
             <h6>Atuação principal</h6>
@@ -139,7 +137,8 @@
           <div>
             <h6>Contato</h6>
             <ul>
-              <li>Atendimento via contato@gestaoatto.com.br</li>
+              <li>guilherme.walter@gestaoatto.com.br</li>
+              <li>+55 (51) 99333-3826</li>
               <li>Caxias do Sul / RS</li>
             </ul>
           </div>
@@ -149,34 +148,35 @@
   </div>
 </section>
 
+<!-- FINANÇAS -->
 <section class="time-area">
   <div class="container">
     <div class="time-area-label">Área 02 · Gestão &amp; Finanças</div>
-    <h2>Finanças &amp; performance — <em>como ir</em>.</h2>
-    <p class="area-desc">Leitura gerencial, DRE por linha, orçado × realizado, capital de giro, pricing e previsibilidade. A área que transforma o resultado da empresa em decisão — com dado no lugar do feeling.</p>
+    <h2>Finanças &amp; performance, <em>como ir</em>.</h2>
+    <p class="area-desc">Leitura gerencial, DRE por linha, orçado × realizado, capital de giro, pricing e previsibilidade. A área que transforma o resultado da empresa em decisão, com dado no lugar do feeling.</p>
 
     <div class="perfil">
-      <div class="perfil-img"><span class="initials" aria-hidden="true">JW</span><img src="assets/time/Juliano_walter.jpg" alt="Juliano Walter" loading="eager"><span class="tag">Sócio</span></div>
+      <div class="perfil-img bg-b"><span class="tag">Sócio</span></div>
       <div class="perfil-info">
-        <div class="cargo">Sócio · Gestão &amp; Finanças · Desenvolvimento</div>
+        <div class="cargo">Sócio · Gestão &amp; Finanças</div>
         <h3>Juliano <em>Walter</em></h3>
-        <div class="subtitle">Performance Financeira · Business Analytics · Previsibilidade de Caixa</div>
-        <p>Sócio da Atto desde 2021, responsável pela área de Gestão &amp; Finanças e pela frente de Desenvolvimento e Business Analytics da casa. Conduz a reconstituição da DRE gerencial dos clientes, a modelagem de capital de giro, a rotina de orçado versus realizado e os painéis de decisão que transformam número em pauta de reunião.</p>
-        <p>Engenheiro metalúrgico pela UFRGS, com Mestrado em Ciência e Tecnologia dos Materiais pela mesma instituição. Durante quase quatro anos atuou em um dos maiores laboratórios de pesquisa industrial do país — resolvendo problemas de linha de produção por método e dado, não por opinião. Leva essa mesma lógica para a mesa da Atto: finança gerencial boa é a que cabe no tempo do sócio e na linguagem da diretoria, sem analista externo no meio do caminho.</p>
-        <p>Desenvolve soluções próprias em R e dashboards executivos. Certificações em FMEA, ISO 9001:2015 (interpretação e auditor interno) e visualização de dados (R Markdown). Inglês fluente.</p>
+        <div class="subtitle">Performance Financeira · Orçamento · Previsibilidade de Caixa</div>
+        <p>Sócio da Atto e responsável pela área de Gestão &amp; Finanças. Conduz a reconstituição da DRE gerencial dos clientes, a modelagem de capital de giro, a rotina de orçado versus realizado e o acompanhamento mensal dos indicadores econômicos. Toda decisão técnica da frente financeira passa pela mesa dele.</p>
+        <p>Operou dentro de indústrias de médio porte antes de entrar na Atto, e leva para o método a convicção de que finança gerencial boa é a que cabe no tempo do sócio e na linguagem da diretoria, sem dependência de analista externo para interpretar o número.</p>
         <div class="perfil-meta">
           <div>
             <h6>Atuação principal</h6>
             <ul>
               <li>Performance Financeira</li>
-              <li>Business Analytics &amp; painéis gerenciais</li>
-              <li>Previsibilidade de caixa e pricing</li>
+              <li>Orçamento &amp; fluxo de caixa</li>
+              <li>Pricing e rentabilidade</li>
             </ul>
           </div>
           <div>
             <h6>Contato</h6>
             <ul>
-              <li>Atendimento via contato@gestaoatto.com.br</li>
+              <li>juliano.walter@gestaoatto.com.br</li>
+              <li>+55 (54) 99624-5417</li>
               <li>Caxias do Sul / RS</li>
             </ul>
           </div>
@@ -186,33 +186,34 @@
   </div>
 </section>
 
+<!-- PESSOAS -->
 <section class="time-area">
   <div class="container">
     <div class="time-area-label">Área 03 · Gente &amp; Gestão</div>
-    <h2>Pessoas &amp; Liderança — <em>quem vai</em>.</h2>
+    <h2>Pessoas &amp; Liderança, <em>quem vai</em>.</h2>
     <p class="area-desc">Arquitetura organizacional, preparação da próxima camada de liderança, trilhas de desenvolvimento, rituais de gestão de pessoas e curadoria de Recrutamento &amp; Seleção para posições-chave.</p>
 
     <div class="perfil">
-      <div class="perfil-img"><span class="initials" aria-hidden="true">PM</span><img src="assets/time/Patr%C3%ADcia_Misturini.jpg" alt="Patrícia Misturini" loading="eager"><span class="tag">Sócia</span></div>
+      <div class="perfil-img bg-c"><span class="tag">Líder da área</span></div>
       <div class="perfil-info">
-        <div class="cargo">Sócia · Gente &amp; Gestão</div>
+        <div class="cargo">Líder · Gente &amp; Gestão</div>
         <h3>Patrícia <em>Misturini</em></h3>
-        <div class="subtitle">Arquitetura humana · Trilhas de Liderança · R&amp;S com curadoria comportamental</div>
-        <p>Sócia da Atto desde 2025, responsável pela área de Gente &amp; Gestão. Soma <strong>30 anos de carreira</strong> em Desenvolvimento Humano e Organizacional — iniciada em uma das maiores companhias de bebidas da América Latina e depois consolidada em posições de liderança de DHO em indústrias e redes de varejo de grande porte, no Sul e Sudeste do país.</p>
-        <p>Passou também pela consultoria executiva (em projetos de reprojeto de processos de RH em hospital de referência e em grande banco) e teve operação própria como franqueada de uma rede de varejo por quatro anos — o que lhe dá o olhar raro de quem viveu os dois lados: o da mesa que desenha o programa e o da mesa que opera o resultado.</p>
-        <p>Conduz a arquitetura humana dos clientes, as trilhas de desenvolvimento de liderança e os processos seletivos com curadoria comportamental. Atua com sócios e diretores na formação da próxima camada de liderança — dos one-on-ones à avaliação de desempenho, do desenho de cargos à cultura em rotina. Formada em Administração (Faculdade AIEC), com dois MBAs — Gestão de RH &amp; Coaching (Centro Universitário La Salle) e Executivo em Administração, Negócios e Marketing (Instituto Líbano). Professora convidada em cursos de Pós-Graduação e Extensão em universidades como UCS, Unisinos e Ulbra.</p>
+        <div class="subtitle">Arquitetura humana · Trilhas de Liderança · Rituais de gestão</div>
+        <p>Responsável pela área de Gente &amp; Gestão da Atto. Conduz o desenho da arquitetura organizacional dos clientes, as trilhas de desenvolvimento de liderança e os rituais de gestão de pessoas, one-on-ones, ciclo de avaliação e Plano de Desenvolvimento Individual. Atua diretamente com sócios e diretores na formação da próxima camada de liderança.</p>
+        <p>Combina experiência prática em empresa de médio porte com repertório técnico em desenvolvimento de pessoas. Traz para a mesa o olhar de quem já esteve nos dois lados, dentro da operação e conduzindo programas de formação, e desenha soluções que cabem no ritmo real da casa.</p>
         <div class="perfil-meta">
           <div>
             <h6>Atuação principal</h6>
             <ul>
               <li>Arquitetura organizacional</li>
               <li>Trilhas de liderança</li>
-              <li>R&amp;S com curadoria comportamental</li>
+              <li>Rituais de gestão de pessoas</li>
             </ul>
           </div>
           <div>
             <h6>Contato</h6>
             <ul>
+              <li>patricia.misturini@gestaoatto.com.br</li>
               <li>Atendimento via contato@gestaoatto.com.br</li>
               <li>Caxias do Sul / RS</li>
             </ul>
@@ -222,26 +223,26 @@
     </div>
 
     <div class="perfil" style="margin-top:48px">
-      <div class="perfil-img"><span class="initials" aria-hidden="true">JV</span><img src="assets/time/J%C3%A9ssica_Varela.jpg" alt="Jéssica Varela" loading="eager"><span class="tag">R&amp;S</span></div>
+      <div class="perfil-img bg-d"><span class="tag">R&amp;S</span></div>
       <div class="perfil-info">
-        <div class="cargo">Consultora · Recrutamento &amp; Seleção</div>
+        <div class="cargo">Recrutamento &amp; Seleção</div>
         <h3>Jéssica <em>Varela</em></h3>
         <div class="subtitle">Curadoria de R&amp;S · Posições de liderança &amp; posições-chave</div>
-        <p>Responsável pela curadoria de processos de Recrutamento &amp; Seleção da Atto. Atua ao lado da Patrícia na frente de Gente &amp; Gestão, conduzindo buscas de C-level, gerência sênior e posições-chave — sempre com os dois filtros que a casa defende: o técnico (competências observáveis, cases, testes práticos) e o cultural (alinhamento com rituais, ritmo da casa e estilo de decisão dos sócios).</p>
-        <p>Mais de cinco anos de experiência em processos seletivos especializados, incluindo dois anos e meio dedicados a R&amp;S em modelo 100% remoto — o que lhe deu domínio completo do fluxo digital de recrutamento e da disciplina de relatório e rastreabilidade dos processos.</p>
-        <p>Conduz ponta a ponta: divulgação estratégica de vagas, triagem técnica, hunting ativo, entrevistas online e presenciais, aplicação e correção de testes, interface direta com o cliente até o agendamento final e a integração pós-contratação. Graduanda em Psicologia (Uniftec) — traz para a mesa a escuta clínica em formação somada ao rigor operacional de quem conduz processos com controle e método.</p>
+        <p>Responsável pela curadoria de processos de Recrutamento &amp; Seleção da Atto. Conduz buscas de C-level, gerência sênior e posições-chave, sempre com os dois filtros que a casa defende: o técnico (competências observáveis, cases, testes práticos) e o cultural (alinhamento com rituais, ritmo da casa e estilo de decisão dos sócios).</p>
+        <p>Atua em indicação qualificada e hunting ativo conforme a posição, com acompanhamento do processo desde a redação do perfil até a integração nos primeiros 90 dias.</p>
         <div class="perfil-meta">
           <div>
             <h6>Atuação principal</h6>
             <ul>
               <li>Curadoria de R&amp;S</li>
-              <li>Hunting ativo e indicação qualificada</li>
+              <li>Posições de liderança</li>
               <li>Integração pós-contratação</li>
             </ul>
           </div>
           <div>
             <h6>Contato</h6>
             <ul>
+              <li>jessica.varela@gestaoatto.com.br</li>
               <li>Atendimento via contato@gestaoatto.com.br</li>
               <li>Caxias do Sul / RS</li>
             </ul>
@@ -255,10 +256,10 @@
 <section class="prova">
   <div class="container">
     <div class="section-label">Prova pela tese</div>
-    <p class="prova-quote">Boutique de verdade é aquela em que o cliente conversa com quem entende do tema — não com quem é treinado para vender. Na Atto, a mesa técnica é a mesa comercial: as duas têm o mesmo nome.</p>
+    <p class="prova-quote">Boutique de verdade é aquela em que o cliente conversa com quem entende do tema, não com quem é treinado para vender. Na Atto, a mesa técnica é a mesa comercial: as duas têm o mesmo nome.</p>
     <div class="prova-meta">
       <span class="name">Guilherme Walter</span>
-      <span>Sócio-fundador · Estratégias Empresariais · Atto</span>
+      <span>Sócio · Estratégias Empresariais · Atto</span>
     </div>
   </div>
 </section>
@@ -277,16 +278,15 @@
 <footer>
   <div class="container">
     <div class="footer-grid">
-      <div class="footer-brand"><a href="index.html" class="footer-logo"><img src="assets/atto_logo_dark.png" alt="Atto" /></a><p>Boutique de estruturação empresarial. Fundada em 2019, em Caxias do Sul / RS.</p><div class="footer-social" style="display:flex;gap:10px;margin-top:16px"><a href="https://www.linkedin.com/company/gestaoatto" target="_blank" rel="noopener" aria-label="LinkedIn" style="width:36px;height:36px;display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.18);border-radius:50%;color:rgba(255,255,255,.75);transition:all .2s"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a><a href="https://www.instagram.com/gestaoatto" target="_blank" rel="noopener" aria-label="Instagram" style="width:36px;height:36px;display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.18);border-radius:50%;color:rgba(255,255,255,.75);transition:all .2s"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a><a href="https://www.facebook.com/gestaoatto" target="_blank" rel="noopener" aria-label="Facebook" style="width:36px;height:36px;display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.18);border-radius:50%;color:rgba(255,255,255,.75);transition:all .2s"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></a></div></div>
+      <div class="footer-brand"><a href="index.html" class="footer-logo"><img src="assets/atto_logo_dark.png" alt="Atto" /></a><p>Boutique de estruturação empresarial. Fundada em 2019, em Caxias do Sul / RS.</p></div>
       <div class="footer-col"><h5>Método</h5><ul><li><a href="metodo.html">Como trabalhamos</a></li><li><a href="diagnostico-90-dias.html">Diagnóstico 90 dias</a></li><li><a href="rotina-mensal.html">Rotina mensal</a></li></ul></div>
       <div class="footer-col"><h5>Soluções</h5><ul><li><a href="direcao-estrategica.html">Direção Estratégica</a></li><li><a href="performance-financeira.html">Performance Financeira</a></li><li><a href="pessoas-lideranca.html">Pessoas &amp; Liderança</a></li><li><a href="governanca-ma.html">Governança &amp; M&amp;A</a></li></ul></div>
       <div class="footer-col"><h5>A Atto</h5><ul><li><a href="sobre.html">Quem somos</a></li><li><a href="clientes.html">Clientes</a></li><li><a href="atuacao.html">Atuação</a></li><li><a href="trabalhe-conosco.html">Trabalhe conosco</a></li></ul></div>
-      <div class="footer-col"><h5>Contato</h5><ul><li><a href="contato.html">Agende conversa</a></li><li><a href="newsletter.html">Newsletter</a></li><li><a href="mailto:contato@gestaoatto.com.br">contato@gestaoatto.com.br</a></li></ul></div>
+      <div class="footer-col"><h5>Contato</h5><ul><li><a href="contato.html">Agende conversa</a></li><li><a href="mailto:contato@gestaoatto.com.br">contato@gestaoatto.com.br</a></li></ul></div>
     </div>
-    <div class="footer-bottom"><div>Atto Estratégias &amp; Educação · &copy; 2026 · Caxias do Sul / RS</div><div><a href="politica-privacidade.html">Política de privacidade</a> · <a href="termos-uso.html">Termos</a></div></div>
+    <div class="footer-bottom"><div>Atto Estratégias &amp; Educação · &copy; 2026 · Caxias do Sul / RS</div><div><a href="#">Política de privacidade</a> · <a href="#">Termos</a></div></div>
   </div>
 </footer>
 <script>(function(){const h=document.getElementById('siteHeader');const d=document.querySelectorAll('.cta-final,.timeline,.bg-dark,.page-hero--dark');function u(){let i=false;d.forEach(s=>{const r=s.getBoundingClientRect();if(r.top<80&&r.bottom>80)i=true});h.classList.toggle('on-dark',i)}window.addEventListener('scroll',u,{passive:true});window.addEventListener('resize',u);u();})();</script>
-<script src="assets/site.js" defer></script>
 </body>
 </html>
